@@ -1,7 +1,7 @@
 import { isBuiltin } from 'node:module'
 import { pathToFileURL } from 'node:url'
 
-const pnpapi = process.versions.pnp && (await import('pnpapi')).default
+const pnpapi = undefined
 
 export default pnpapi && ((id, parent) => {
   if (isBuiltin(id)) {
